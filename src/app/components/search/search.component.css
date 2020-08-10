@@ -1,0 +1,16 @@
+.search-input {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+  margin-bottom: 10px;
+  height: 40px;
+  line-height: 20px;
+  padding: 8px 15px;
+}
+
+.users {
+  align-items: flex-start;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+}

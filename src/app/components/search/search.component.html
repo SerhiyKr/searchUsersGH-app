@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Введите имя пользователя</h1>
+  <input class="search-input" type="text" [(ngModel)]="userName" (keyup)="search()">
+  <div *ngIf="response">
+    <br>
+    <ul class="users">
+      <li *ngFor="let item of response.items">
+        <h5>{{ item.login }}</h5>
+        <br>
+        <img src="{{ item.avatar_url }}">
+      </li>
+    </ul>
+  </div>
+</div>
